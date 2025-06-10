@@ -1,0 +1,33 @@
+/* Footer */
+footer {
+  background-color: #333;
+  color: #eee;
+  text-align: center;
+  padding: 2rem;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+}
+
+footer p {
+  margin-bottom: 0.8rem;
+}
+
+footer a {
+  color: #aaa;
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
+
+footer a:hover {
+  color: #fff;
+}
+.footer-links,
+.useful-links {
+  margin-bottom: 1rem;
+}
+.footer-links span + span::before,
+.useful-links span + span::before {
+  content: " | ";
+  margin: 0 0.3rem;
+  color: #aaa;
+}

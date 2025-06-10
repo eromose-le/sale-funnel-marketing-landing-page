@@ -1,0 +1,126 @@
+<main>
+  <section id="hero" class="hero-upgraded">
+    <div class="hero-content">
+      <h1 id="hero-title" class="animate-hero-title"></h1>
+      <h2 id="hero-subtitle"></h2>
+      <p id="hero-desc1"></p>
+      <p id="hero-desc2"></p>
+      <p id="hero-tagline"></p>
+      <div class="hero-buttons">
+        <button class="cta-button pulse" id="scroll-to-shop">
+          GET YOURS NOW – LIMITED PROMO!
+        </button>
+        <a id="whatsapp-button" class="whatsapp-button" target="_blank">Order
+          via WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="product-slider video-demo">
+    <h2 id="video-title">WATCH VIDEO DEMONSTATION!</h2>
+    <div class="slider-container">
+      <div id="slider" class="slider-track"></div>
+    </div>
+    <div class="slider-controls">
+      <button id="prevBtn">⟵ Prev</button>
+      <button id="playPauseBtn">⏸ Pause</button>
+      <button id="nextBtn">Next ⟶</button>
+    </div>
+    <p class="slider-controls-description" id="video-description"></p>
+  </section>
+
+  <section id="benefits">
+    <h2 id="benefits-headline">BENEFITS OF TREADMILL</h2>
+    <ul id="benefits-list"></ul>
+    <div class="guarantee">
+      <p id="guarantee-text"></p>
+    </div>
+  </section>
+
+  <section id="shop" class="products-section">
+    <h2>PRODUCT INFO</h2>
+    <div id="product-list" class="products"></div>
+
+    <div id="delivery-info" class="delivery-info">
+      <h3 id="delivery-headline"></h3>
+      <p id="delivery-payment"></p>
+      <p id="delivery-timelines"></p>
+      <h4 id="delivery-offer-headline"></h4>
+      <ul id="delivery-offers"></ul>
+      <p><strong id="delivery-note"></strong></p>
+      <p>
+        FOR ENQUIRES, CALL/SMS/WHATSAPP:
+        <span id="contact-phone-delivery"></span>
+      </p>
+    </div>
+  </section>
+
+  <section id="testimonials">
+    <h2>SEE WHAT OUR CUSTOMERS ARE SAYING</h2>
+    <div id="testimonials-container"></div>
+    <p>
+      JOIN OVER
+      <span id="customer-count"></span>
+      HAPPY CUSTOMERS TODAY!
+    </p>
+  </section>
+
+  <section id="order-form">
+    <h2>FILL FORM BELOW TO ORDER</h2>
+    <form id="customer-order-form">
+      <div class="form-group">
+        <label for="name">Name *</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="First Last"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label for="address">Full Address *</label>
+        <input
+          type="text"
+          id="address1"
+          name="address1"
+          placeholder="Address Line 1"
+          required
+        />
+        <input type="text" id="city" name="city" placeholder="City" required />
+        <input
+          type="text"
+          id="state"
+          name="state"
+          placeholder="State / Province / Region"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label for="email">Email *</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+      <div class="form-group">
+        <label for="phone1">Phone Number *</label>
+        <input type="tel" id="phone1" name="phone1" required />
+      </div>
+      <div class="form-group">
+        <label for="phone2">Second Phone Number</label>
+        <input type="tel" id="phone2" name="phone2" />
+      </div>
+      <div class="form-group">
+        <label>Choose Product(s) *</label>
+        <div id="product-checkbox-group" class="product-checkbox-group"></div>
+        <p class="form-hint">You can select more than one.</p>
+      </div>
+      <div style="display: none">
+        <select id="product-select"></select>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+    <p id="form-message"></p>
+  </section>
+</main>
+
+<link rel="stylesheet" href="{{resolve-from-root 'partials/main.css'}}" />
+<script type="module" src="{{resolve-from-root 'partials/main.js'}}"></script>
