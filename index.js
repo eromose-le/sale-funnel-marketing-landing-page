@@ -390,7 +390,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   const formMessage = document.getElementById("form-message");
 
   if (form) {
-    emailjs.init("iRleGb4t1hrynXkJv"); // ✅ Correct place to initialize
+    emailjs.init("f5d048ZbSPwRoAHKe"); // ✅ Correct place to initialize
 
     form.addEventListener("submit", (event) => {
       event.preventDefault();
@@ -438,7 +438,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       };
 
       emailjs
-        .send("service_lsa2sbb", "template_pp08e7f", orderData)
+        .send("service_4uteeq9", "template_fkuesah", orderData)
         .then(() => {
           alert(
             "✅ Order submitted successfully!\nWe’ll contact you shortly via WhatsApp or Email."

@@ -1,6 +1,7 @@
 import { resolve } from "path";
 import { defineConfig } from "vite";
 import handlebars from "vite-plugin-handlebars";
+import { viteStaticCopy } from "vite-plugin-static-copy";
 
 export default defineConfig({
   build: {
@@ -14,6 +15,14 @@ export default defineConfig({
   plugins: [
     handlebars({
       partialDirectory: resolve(__dirname, "partials"),
+    }),
+    viteStaticCopy({
+      targets: [
+        {
+          src: "data", // Your actual data folder in root
+          dest: "", // Copies it to the root of dist/
+        },
+      ],
     }),
   ],
 });
