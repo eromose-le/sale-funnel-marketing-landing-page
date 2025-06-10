@@ -1,3 +1,6 @@
+const orderButton = document.createElement("button");
+const loadingIndicatorEl = document.getElementById("order__loading-indicator");
+
 // --- Populate Elements with Data ---
 function getPageName() {
   const path = window.location.pathname;
@@ -437,19 +440,43 @@ document.addEventListener("DOMContentLoaded", async () => {
         order_id: productIds.join(", "),
       };
 
+      orderButton.disabled = true;
+      loadingIndicatorEl.classList.remove("hidden");
+
       emailjs
-        .send("service_4uteeq9", "template_fkuesah", orderData)
+        .send("service_4uteeq9", "template_fkuesah-", orderData)
         .then(() => {
           alert(
             "✅ Order submitted successfully!\nWe’ll contact you shortly via WhatsApp or Email."
           );
+          Swal.fire({
+            icon: "success",
+            text: "Order submitted! We’ll contact you shortly via WhatsApp or Email.",
+            toast: true,
+            position: "top-end",
+            timer: 3000,
+            showConfirmButton: false,
+          });
           // formMessage.textContent = "";
           formMessage.textContent =
             "✅ Order submitted! We’ll contact you shortly via WhatsApp or Email.";
           formMessage.style.color = "green";
           form.reset();
+
+          orderButton.disabled = false;
+          loadingIndicatorEl.classList.add("hidden");
         })
         .catch((error) => {
+          Swal.fire({
+            icon: "error",
+            text: "❌ Error sending order. Please try again or contact us directly.",
+            toast: true,
+            position: "top-end",
+            timer: 3000,
+            showConfirmButton: false,
+          });
+          orderButton.disabled = false;
+          loadingIndicatorEl.classList.add("hidden");
           console.error("EmailJS error:", error);
           formMessage.textContent =
             "❌ Error sending order. Please try again or contact us directly.";
