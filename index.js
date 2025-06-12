@@ -1,5 +1,8 @@
 const orderButton = document.createElement("button");
 const loadingIndicatorEl = document.getElementById("order__loading-indicator");
+const templateKey = "template_fkuesah";
+const serviceKey = "service_4uteeq9";
+const emailJsKey = "f5d048ZbSPwRoAHKe";
 
 // --- Populate Elements with Data ---
 function getPageName() {
@@ -393,7 +396,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   const formMessage = document.getElementById("form-message");
 
   if (form) {
-    emailjs.init("f5d048ZbSPwRoAHKe"); // ✅ Correct place to initialize
+    emailjs.init(emailJsKey); // ✅ Correct place to initialize
 
     form.addEventListener("submit", (event) => {
       event.preventDefault();
@@ -444,7 +447,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       loadingIndicatorEl.classList.remove("hidden");
 
       emailjs
-        .send("service_4uteeq9", "template_fkuesah-", orderData)
+        .send(serviceKey, templateKey, orderData)
         .then(() => {
           alert(
             "✅ Order submitted successfully!\nWe’ll contact you shortly via WhatsApp or Email."

@@ -1,32 +1,9 @@
-const navigation = [
-  { text: "HOME", link: "#hero" },
-  { text: "SHOP", link: "#shop" },
-  { text: "ABOUT US", link: "#about" },
-  { text: "CONTACT", link: "#contact" },
-];
-
-const contactInfo = {
-  phone: "08102515044",
-  whatsapp: "08102515044",
-  email: "chrisportventure@gmail.com",
-};
-
-const deliveryInfo = {
-  headline: "FREE DELIVERY WHEN YOU ORDER NOW",
-  paymentInfo: "NATIONWIDE PAYMENT ON DELIVERY AVAILABLE",
-  timelines:
-    "DELIVERY TO LAGOS STATE WITHIN 24HRS, OTHER STATES WITHIN 3-5 DAYS (Or Less)",
-  offerHeadline: "ORDER NOW AND ENJOY:",
-  offers: [
-    "PROMO PRICE",
-    "PAYMENT ON DELIVERY",
-    "QUICK DELIVERY",
-    "FREE DELIVERY",
-    "FREE INSTALLATION",
-    "1 YEAR WARRANTY",
-  ],
-  importantNote: "ONLY PLACE ORDER IF YOU ARE READY FOR DELIVERY & PAYMENT",
-};
+import {
+  contactInfo,
+  deliveryInfo,
+  footer,
+  navigation,
+} from "../constants/siteData";
 
 const heroSection = {
   title: "VIBERATION MACHINE",
@@ -40,7 +17,7 @@ const heroSection = {
 const videoSection = {
   title: "WATCH VIDEO DEMONSTATION!",
   videoUrl:
-    "https://utfs.io/a/zxzyub6zq2/OX5ramIp6AH47gIhJV3tqloZKxjcWNCdIY0FaAgi8G1mwQkJ", // Example video URL
+    "https://utfs.io/a/zxzyub6zq2/OX5ramIp6AH47gIhJV3tqloZKxjcWNCdIY0FaAgi8G1mwQkJ",
   duration: "0:43",
   description:
     "We have all heard it many times - regular exercise is good for you, and it can help you lose weight. Technology has changed exercise. Fitness equipment manufacturers are constantly innovating new products...",
@@ -66,7 +43,7 @@ const products = [
     price: 425000,
     oldPrice: 500000,
     imageUrl:
-      "https://utfs.io/a/zxzyub6zq2/OX5ramIp6AH4J1iSk5esDzriV8pZ04WKvHgby3wJmAQLMNfn", // Example image path 'images/product2.jpg'
+      "https://utfs.io/a/zxzyub6zq2/OX5ramIp6AH4J1iSk5esDzriV8pZ04WKvHgby3wJmAQLMNfn",
     videoUrl:
       "https://utfs.io/a/zxzyub6zq2/OX5ramIp6AH47gIhJV3tqloZKxjcWNCdIY0FaAgi8G1mwQkJ",
   },
@@ -197,24 +174,6 @@ const testimonials = [
     location: "Abuja",
   },
 ];
-
-const footer = {
-  usefulLinks: [
-    { text: "Home", link: "#hero" },
-    { text: "Shop", link: "#shop" },
-    { text: "About Us", link: "#about" }, // Adjust if needed
-    { text: "Contact Us", link: "#contact" }, // Adjust if needed
-  ],
-  legalLinks: [
-    { text: "Terms Of Service", link: "#terms" }, // Placeholder links
-    { text: "Privacy Policy", link: "#privacy" },
-    { text: "Disclaimer", link: "#disclaimer" },
-  ],
-  facebookDisclaimer:
-    "This site is not a part of the Facebook™ website or Facebook™ Inc. Additionally, this site is NOT endorsed by Facebook™ in any way. FACEBOOK™ is a trademark of FACEBOOK™, Inc.",
-  copyright: "Copyright © 2025 Chrisport Venture",
-  designer: "DESIGNED BY: Roca delta Consulting",
-};
 
 const siteData = {
   brandName: "Chrisport Venture",

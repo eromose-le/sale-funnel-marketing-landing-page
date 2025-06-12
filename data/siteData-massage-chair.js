@@ -7,7 +7,7 @@ const navigation = [
 
 const contactInfo = {
   phone: "08102515044",
-  whatsapp: "08102515044",
+  whatsapp: "2348102515044",
   email: "chrisportventure@gmail.com",
 };
 

@@ -9,6 +9,14 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, "index.html"),
         ["massage-chair"]: resolve(__dirname, "massage-chair/index.html"),
+        ["tennis-snooker-game"]: resolve(
+          __dirname,
+          "tennis-snooker-game/index.html"
+        ),
+        ["commercial-equipment"]: resolve(
+          __dirname,
+          "commercial-equipment/index.html"
+        ),
       },
     },
   },
