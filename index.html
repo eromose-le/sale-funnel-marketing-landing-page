@@ -2,36 +2,76 @@
 <html lang="en">
   <head>
     {{> metas}} {{> links}}
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chrisport Venture – Home</title>
     <link rel="stylesheet" href="index.css" />
-    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     {{> body}} {{> header}}
 
-    <a class="app-header__navigation-item nav__link" href="/massage-chair/"
-      >Massage Chair</a
-    >
-    <a
-      class="app-header__navigation-item nav__link"
-      href="/tennis-snooker-game/"
-      >Tennis / Snooker Game</a
-    >
-    <a
-      class="app-header__navigation-item nav__link"
-      href="/commercial-equipment/"
-      >COMMERCIAL GYM EQUIPMENTS</a
-    >
-    <a
-      class="app-header__navigation-item nav__link"
-      href="/exercise-bike/"
-      >Exercise Bike</a
-    >
-    <a
-      class="app-header__navigation-item nav__link"
-      href="/dumbbells-bench/"
-      >Dumbbells / Bench</a
-    >
-    {{> main}} {{> footer}} {{> scripts}}
+    <header class="hero">
+      <div class="hero-content">
+        <h1>Welcome to <span>Chrisport Venture</span></h1>
+        <p>Your Trusted Source for Fitness and Wellness Equipment</p>
+        <a id="whatsapp-button" class="cta-button" target="_blank"
+          >Order via WhatsApp</a
+        >
+      </div>
+    </header>
+
+    <main id="categories" class="product-categories">
+      <h2 class="section-title">Shop by Category</h2>
+      <div class="category-grid">
+        <a href="/massage-chair/" class="category-card">
+          <img
+            src="https://45wg8knj47.ufs.sh/f/wphKuQ5a7nZ8yLCnaPWUpkDOoFIWiLRz1q8M3QKJ4fxtE0b2"
+            alt="Massage Chair"
+          />
+          <h3>Massage Chair</h3>
+        </a>
+
+        <a href="/tennis-snooker-game/" class="category-card">
+          <img
+            src="https://45wg8knj47.ufs.sh/f/wphKuQ5a7nZ8lJpIpZfcsL1r8jtQdb09ouORmvEpVWFaUJGN"
+            alt="Tennis & Snooker Game"
+          />
+          <h3>Tennis / Snooker Game</h3>
+        </a>
+
+        <a href="/commercial-equipment/" class="category-card">
+          <img
+            src="https://zxzyub6zq2.ufs.sh/f/OX5ramIp6AH4y97eubgTGjM4ZSqbAX1zcUHJEtdOnBeg93rv"
+            alt="Commercial Gym Equipment"
+          />
+          <h3>Commercial Gym Equipment</h3>
+        </a>
+
+        <a href="/exercise-bike/" class="category-card">
+          <img
+            src="https://45wg8knj47.ufs.sh/f/wphKuQ5a7nZ8cyoIKdgVvMRfg8n0G7tFxiLIXPayKz1DkBqO"
+            alt="Exercise Bike"
+          />
+          <h3>Exercise Bike</h3>
+        </a>
+
+        <a href="/dumbbells-bench/" class="category-card">
+          <img
+            src="https://zxzyub6zq2.ufs.sh/f/OX5ramIp6AH4IbATC8JaYK7so4ZDkJtpmr2qcdwAMixUOz5S"
+            alt="Dumbbells & Bench"
+          />
+          <h3>Dumbbells / Bench</h3>
+        </a>
+      </div>
+    </main>
+
+    {{> footer}} {{> scripts}}
 
     <script type="module" src="/index.js"></script>
   </body>
