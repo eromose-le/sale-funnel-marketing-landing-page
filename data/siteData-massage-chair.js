@@ -1,32 +1,9 @@
-const navigation = [
-  { text: "HOME", link: "#hero" },
-  { text: "SHOP", link: "#shop" },
-  { text: "ABOUT US", link: "#about" },
-  { text: "CONTACT", link: "#contact" },
-];
-
-const contactInfo = {
-  phone: "08102515044",
-  whatsapp: "2348102515044",
-  email: "chrisportventure@gmail.com",
-};
-
-const deliveryInfo = {
-  headline: "FREE DELIVERY WHEN YOU ORDER NOW",
-  paymentInfo: "NATIONWIDE PAYMENT ON DELIVERY AVAILABLE",
-  timelines:
-    "DELIVERY TO LAGOS STATE WITHIN 24HRS, OTHER STATES WITHIN 3-5 DAYS (Or Less)",
-  offerHeadline: "ORDER NOW AND ENJOY:",
-  offers: [
-    "PROMO PRICE",
-    "PAYMENT ON DELIVERY",
-    "QUICK DELIVERY",
-    "FREE DELIVERY",
-    "FREE INSTALLATION",
-    "1 YEAR WARRANTY",
-  ],
-  importantNote: "ONLY PLACE ORDER IF YOU ARE READY FOR DELIVERY & PAYMENT",
-};
+import {
+  contactInfo,
+  deliveryInfo,
+  footer,
+  navigation,
+} from "../constants/siteData";
 
 const heroSection = {
   title: "EXECUTIVE MASSAGE CUSHION",
@@ -94,6 +71,25 @@ const products = [
     videoUrl:
       "https://45wg8knj47.ufs.sh/f/wphKuQ5a7nZ8Pfjab7TD91CrNYgbxlXGZASdPkphUKaQiwH8",
   },
+  {
+    id: "4D_Massage_Chair",
+    name: "4D luxury Massage Chair",
+    features: [
+      "Shiatsu Massage",
+      "Kneading",
+      "Tapping",
+      "Heating Rated Power:120watts",
+      "🎩 Weight:65kgs",
+      "🪟Size:1230*730* 1000mm",
+    ],
+    maxWeight: "",
+    price: 1550000,
+    oldPrice: 1850000,
+    imageUrl:
+      "https://zxzyub6zq2.ufs.sh/f/OX5ramIp6AH4SABbwHOGFm4r2wOpk3jT0qJXncLyD1lB7Rhu",
+    videoUrl:
+      "https://zxzyub6zq2.ufs.sh/f/OX5ramIp6AH46yc8xtuRA4CvEfS5jGlniPTb0Ns7XwIBk8Ut",
+  },
 ];
 
 const testimonials = [
@@ -149,24 +145,6 @@ const testimonials = [
     location: "Ekiti",
   },
 ];
-
-const footer = {
-  usefulLinks: [
-    { text: "Home", link: "#hero" },
-    { text: "Shop", link: "#shop" },
-    { text: "About Us", link: "#about" }, // Adjust if needed
-    { text: "Contact Us", link: "#contact" }, // Adjust if needed
-  ],
-  legalLinks: [
-    { text: "Terms Of Service", link: "#terms" }, // Placeholder links
-    { text: "Privacy Policy", link: "#privacy" },
-    { text: "Disclaimer", link: "#disclaimer" },
-  ],
-  facebookDisclaimer:
-    "This site is not a part of the Facebook™ website or Facebook™ Inc. Additionally, this site is NOT endorsed by Facebook™ in any way. FACEBOOK™ is a trademark of FACEBOOK™, Inc.",
-  copyright: "Copyright © 2025 Chrisport Venture",
-  designer: "DESIGNED BY: Roca delta Consulting",
-};
 
 const siteData = {
   brandName: "Chrisport Venture",

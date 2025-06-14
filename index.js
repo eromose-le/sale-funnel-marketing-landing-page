@@ -3,6 +3,8 @@ const loadingIndicatorEl = document.getElementById("order__loading-indicator");
 const templateKey = "template_fkuesah";
 const serviceKey = "service_4uteeq9";
 const emailJsKey = "f5d048ZbSPwRoAHKe";
+const defaultImagePath =
+  "https://zxzyub6zq2.ufs.sh/f/OX5ramIp6AH4mQJbygjxbNuayWwsiKnYqShUCRB8VpPEvdk2";
 
 // --- Populate Elements with Data ---
 function getPageName() {
@@ -111,11 +113,11 @@ function populateProducts(productData) {
     itemDiv.className = "product-item";
 
     const img = document.createElement("img");
-    img.src = product.imageUrl || "/images/chrisport-logo.png"; // Use placeholder if no image
+    img.src = product.imageUrl || defaultImagePath; // Use placeholder if no image
     img.alt = product.name;
     // Handle image loading errors (optional but good practice)
     img.onerror = () => {
-      img.src = "/images/chrisport-logo.png";
+      img.src = defaultImagePath;
     }; // Fallback image
 
     const nameH3 = document.createElement("h3");
