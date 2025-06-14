@@ -261,7 +261,7 @@ function populateSlider(products) {
       const video = document.createElement("video");
       video.src = product.videoUrl;
       video.autoplay = true;
-      video.muted = false;
+      video.muted = true;
       video.loop = true;
       slide.appendChild(video);
     } else {
