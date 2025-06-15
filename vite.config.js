@@ -23,6 +23,10 @@ export default defineConfig({
           __dirname,
           "slimming-abdominal-machines/index.html"
         ),
+        ["treadmill"]: resolve(
+          __dirname,
+          "treadmill/index.html"
+        ),
       },
     },
   },
