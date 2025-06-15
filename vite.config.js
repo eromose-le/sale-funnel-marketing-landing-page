@@ -17,13 +17,11 @@ export default defineConfig({
           __dirname,
           "commercial-equipment/index.html"
         ),
-        ["exercise-bike"]: resolve(
+        ["exercise-bike"]: resolve(__dirname, "exercise-bike/index.html"),
+        ["dumbbells-bench"]: resolve(__dirname, "dumbbells-bench/index.html"),
+        ["slimming-abdominal-machines"]: resolve(
           __dirname,
-          "exercise-bike/index.html"
-        ),
-        ["dumbbells-bench"]: resolve(
-          __dirname,
-          "dumbbells-bench/index.html"
+          "slimming-abdominal-machines/index.html"
         ),
       },
     },
