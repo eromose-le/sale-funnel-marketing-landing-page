@@ -126,9 +126,54 @@ const products = [
 
 const testimonials = [
   {
-    quote: "xyz",
-    author: "xyz",
-    location: "xyz",
+    quote:
+      "The fact that this treadmill has virtually all the exercise functions in 1 is stunning...",
+    author: "Capt. Isreal",
+    location: "Warri, Delta",
+  },
+  {
+    quote: "This treadmill is more than what i expected...",
+    author: "Joshua Enendu",
+    location: "Abuja",
+  },
+  {
+    quote: "Very lovely customer service...",
+    author: "Mrs Bunmi",
+    location: "Ajao est. Lagos",
+  },
+  {
+    quote: "I love the TREADMILL MACHINE...",
+    author: "Mr Dayo",
+    location: "Akure, Ondo",
+  },
+  {
+    quote: "I love the TREADMILL MACHINE...",
+    author: "Aladi U.S",
+    location: "Abuja",
+  },
+  {
+    quote:
+      "A very honest seller. Very dependable and trustworthy. Sent my exercise bike and threadmill to me in Ado Ekiti within hours. Products were of good quality and as described. Please buy from him with peace of mind",
+    author: "Solomon oke",
+    location: "Ondo state",
+  },
+  {
+    quote:
+      "This Mr. Chris is a very humble, amiable and gentle man who has business acumen & ethics to satisfy his buyers. God bless you for being truthful and remember to inform me when the remaining orders are available, please. Thank you Sir CHRISPORT.",
+    author: "Madam Tracey",
+    location: "Anambra",
+  },
+  {
+    quote:
+      "Nice, prompt and satisfying. He is one of the few dedicated and trustworthy people in this world. Thank you for your service.",
+    author: "SG LIGHTING AND ELECTRICAL",
+    location: "Benin",
+  },
+  {
+    quote:
+      "Oh wow.. I am wowed and beyond words.. The truth is.. I have a problem with my left leg.. Polio.. I got this product because I needed to strengthen both legs... I wasn't sure if the product was going to be strong enough to carry my weight since I rely on my upper body to lift my lower body.. I am so glad you encouraged me to go for the one with handle and even gave it to me at a really fair deal.. I used it just now and I am almost in tears as it's really sturdy, strong and of very good quality.. I don't know you sir.. But God knows who you are and God will reward you like you truly deserve.. Thank you for allowing me to pay on delivery.. Thank you for trusting me enough to even make payment and thank you for bringing quality to my doorstep.. God bless you and all you hold dear sir.",
+    author: "Mrs Oluwabumi",
+    location: "Ekiti",
   },
 ];
 

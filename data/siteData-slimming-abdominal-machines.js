@@ -61,7 +61,7 @@ const products = [
     price: 180000,
     oldPrice: 230000,
     imageUrl:
-      "https://45wg8knj47.ufs.sh/f/wphKuQ5a7nZ8uxAZTmBSs3BNzeqSQw5ymF7DAEoOhr8x4gMC",
+      "https://zxzyub6zq2.ufs.sh/f/OX5ramIp6AH4Uzw2A092Nptid5bS4zkjWr37GgFwALhYv9al",
     videoUrl:
       "https://45wg8knj47.ufs.sh/f/wphKuQ5a7nZ8JQbNbYsl69uKD4rTOW7PgjbS2xo1mXEJV5iY",
   },
