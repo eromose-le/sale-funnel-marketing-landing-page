@@ -122,7 +122,7 @@ const products = [
     name: "Adjustable Weight bench with chest expansion",
     features: ["Adjustable bench with chest expansion  without load"],
     maxWeight: "150KG",
-    price: 2300000,
+    price: 230000,
     oldPrice: 280000,
     imageUrl:
       "https://zxzyub6zq2.ufs.sh/f/OX5ramIp6AH49GgFRX23bDNtPceuFZH8yXpwf0dE2RrzW5A4",
